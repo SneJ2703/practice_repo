@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Connect - Alumni Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="logo-section">
+            <div class="logo">
+                <div class="logo-icon">AU</div>
+                <span class="logo-text">Alumni Connect</span>
+            </div>
+        </div>
+        
+        <div class="header-right">
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search alumni, events...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <button class="notification-icon">
+                <i class="fas fa-bell"></i>
+                <span class="notification-badge">3</span>
+            </button>
+            <div class="user-info">
+                <div class="user-avatar">👤</div>
+                <span class="user-name">Alumni User</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <a href="alumni_dashboard.html" class="nav-item active">
+                <i class="fas fa-th-large"></i>
+                Dashboard
+            </a>
+            <a href="alumni_directory.html" class="nav-item">
+                <i class="fas fa-users"></i>
+                Alumni Directory
+            </a>
+            <a href="alumni_events.html" class="nav-item">
+                <i class="fas fa-calendar"></i>
+                Events
+            </a>
+            <a href="alumni_forum.html" class="nav-item">
+                <i class="fas fa-comments"></i>
+                Forums
+            </a>
+            <a href="alumni_mentorship.html" class="nav-item">
+                <i class="fas fa-handshake"></i>
+                Mentorship
+            </a>
+            <a href="alumni_career.html" class="nav-item">
+                <i class="fas fa-briefcase"></i>
+                Career Center
+            </a>
+            <a href="alumni_giveback.html" class="nav-item">
+                <i class="fas fa-gift"></i>
+                Give Back
+            </a>
+            <a href="alumni_profile.html" class="nav-item">
+                <i class="fas fa-user-cog"></i>
+                Profile Settings
+            </a>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="welcome-section">
+                <h1 class="welcome-title">Welcome back, Alumni!</h1>
+                <p class="welcome-subtitle">Here's what's happening in your alumni network</p>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Fellow Alumni</span>
+                        <div class="stat-icon blue">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="stat-number">1,245</div>
+                    <div class="stat-description">In your network</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Upcoming Events</span>
+                        <div class="stat-icon green">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                    </div>
+                    <div class="stat-number">5</div>
+                    <div class="stat-description">This month</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Mentees</span>
+                        <div class="stat-icon orange">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                    </div>
+                    <div class="stat-number">3</div>
+                    <div class="stat-description">Active mentorships</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Contributions</span>
+                        <div class="stat-icon teal">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                    </div>
+                    <div class="stat-number">$2,500</div>
+                    <div class="stat-description">Total donated</div>
+                </div>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="content-grid">
+                <!-- Recent Activity -->
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">
+                            <i class="fas fa-bell section-icon"></i>
+                            Recent Activity
+                        </h2>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-dot blue"></div>
+                            <div class="activity-content">
+                                <h4>New mentorship request</h4>
+                                <p>John Smith (Class of 2023) requested mentorship</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-dot green"></div>
+                            <div class="activity-content">
+                                <h4>Upcoming event reminder</h4>
+                                <p>Annual Alumni Gala • 2 weeks away</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-dot orange"></div>
+                            <div class="activity-content">
+                                <h4>Job posting shared</h4>
+                                <p>Your company's job posting was shared 15 times</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-dot teal"></div>
+                            <div class="activity-content">
+                                <h4>Donation impact</h4>
+                                <p>Your donation helped fund 2 student scholarships</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Quick Actions</h2>
+                    </div>
+                    <div class="actions-list">
+                        <div class="actions-grid">
+                            <button class="action-card blue">
+                                <div class="action-icon blue">
+                                    <i class="fas fa-user-plus"></i>
+                                </div>
+                                <div class="action-text">Become a Mentor</div>
+                            </button>
+                            <button class="action-card green">
+                                <div class="action-icon green">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div class="action-text">Post a Job</div>
+                            </button>
+                            <button class="action-card orange">
+                                <div class="action-icon orange">
+                                    <i class="fas fa-hand-holding-usd"></i>
+                                </div>
+                                <div class="action-text">Make a Donation</div>
+                            </button>
+                            <button class="action-card teal">
+                                <div class="action-icon teal">
+                                    <i class="fas fa-calendar-plus"></i>
+                                </div>
+                                <div class="action-text">Create Event</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Alumni-specific Content -->
+            <div class="content-grid">
+                <!-- Impact Section -->
+                <div class="content-section full-width">
+                    <div class="section-header">
+                        <h2 class="section-title">
+                            <i class="fas fa-chart-line section-icon"></i>
+                            Your Alumni Impact
+                        </h2>
+                    </div>
+                    <div class="impact-stats">
+                        <div class="impact-item">
+                            <div class="impact-number">12</div>
+                            <div class="impact-label">Students Mentored</div>
+                        </div>
+                        <div class="impact-item">
+                            <div class="impact-number">5</div>
+                            <div class="impact-label">Events Organized</div>
+                        </div>
+                        <div class="impact-item">
+                            <div class="impact-number">8</div>
+                            <div class="impact-label">Jobs Shared</div>
+                        </div>
+                        <div class="impact-item">
+                            <div class="impact-number">$2,500</div>
+                            <div class="impact-label">Total Donated</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="common.js"></script>
+    <script>
+        // Ensure logout function is available
+        function handleLogout() {
+            if (window.loginManager && typeof window.loginManager.logout === 'function') {
+                window.loginManager.logout();
+            } else {
+                // Fallback: clear session and redirect manually
+                localStorage.removeItem('userSession');
+                window.location.href = '../index.html';
+            }
+        }
+        // User Menu Functions 
+         function showUserMenu() {
+            showModal(
+                'User Menu',
+                `
+                <div class="user-menu-items">
+                    <div class="menu-item-button" onclick="showHelpModal()">
+                        <i class="fas fa-question-circle"></i>
+                        Help & Support
+                    </div>
+                    <div class="menu-item-button logout-item" onclick="handleLogout()">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </div>
+                </div>
+                `,
+                [{ text: 'Close', action: 'closeCurrentModal', className: 'btn-ghost' }]
+            );
+        }
+
+        function showHelpModal() {
+            showModal(
+                'Help & Support',
+                `
+                <h4>Frequently Asked Questions</h4>
+                <details style="margin: 12px 0;">
+                    <summary style="cursor: pointer; font-weight: 600;">How do I mentor students?</summary>
+                    <p style="margin-top: 8px; color: #666;">Go to the Mentorship section to view mentorship requests and accept students you'd like to mentor.</p>
+                </details>
+                <details style="margin: 12px 0;">
+                    <summary style="cursor: pointer; font-weight: 600;">How do I post job opportunities?</summary>
+                    <p style="margin-top: 8px; color: #666;">Visit the Career Center and click "Post a Job" to share opportunities with students and other alumni.</p>
+                </details>
+                <details style="margin: 12px 0;">
+                    <summary style="cursor: pointer; font-weight: 600;">How do I create events?</summary>
+                    <p style="margin-top: 8px; color: #666;">Use the Events section to create and manage alumni events, workshops, and networking sessions.</p>
+                </details>
+                <details style="margin: 12px 0;">
+                    <summary style="cursor: pointer; font-weight: 600;">How do I make donations?</summary>
+                    <p style="margin-top: 8px; color: #666;">Visit the Give Back section to view donation opportunities and contribute to student scholarships.</p>
+                </details>
+                <p style="margin-top: 20px;"><strong>Need more help?</strong> Contact us at support@alumniconnect.edu</p>
+                `,
+                [{ text: 'Close', action: 'closeCurrentModal', className: 'btn-primary' }]
+            );
+        }
+
+        // Initialize user menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const userInfo = document.querySelector('.user-info');
+            if (userInfo) {
+                userInfo.addEventListener('click', function() {
+                    showUserMenu();
+                });
+            }
+        });
+
+        // Modal System Functions (copied from student dashboard common.js)
+        function showModal(title, content, actions = []) {
+            const existingModal = document.querySelector('.modal-overlay');
+            if (existingModal) {
+                existingModal.remove();
+            }
+            
+            const modalOverlay = document.createElement('div');
+            modalOverlay.className = 'modal-overlay';
+            modalOverlay.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 10000;
+            `;
+            
+            modalOverlay.innerHTML = `
+                <div class="modal" style="
+                    background: white;
+                    border-radius: 12px;
+                    max-width: 500px;
+                    width: 90%;
+                    max-height: 80vh;
+                    overflow-y: auto;
+                    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+                ">
+                    <div class="modal-header" style="
+                        padding: 24px 24px 0 24px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-bottom: 1px solid #e5e7eb;
+                        margin-bottom: 20px;
+                        padding-bottom: 16px;
+                    ">
+                        <h3 class="modal-title" style="
+                            margin: 0;
+                            font-size: 18px;
+                            font-weight: 600;
+                            color: #333;
+                        ">${title}</h3>
+                        <button class="modal-close" style="
+                            background: none;
+                            border: none;
+                            font-size: 24px;
+                            cursor: pointer;
+                            color: #666;
+                            padding: 0;
+                            width: 32px;
+                            height: 32px;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        ">&times;</button>
+                    </div>
+                    <div class="modal-body" style="padding: 0 24px 20px 24px;">
+                        ${content}
+                    </div>
+                    ${actions.length > 0 ? `
+                        <div class="modal-footer" style="
+                            padding: 16px 24px 24px 24px;
+                            display: flex;
+                            gap: 12px;
+                            justify-content: flex-end;
+                            border-top: 1px solid #e5e7eb;
+                            margin-top: 20px;
+                            padding-top: 16px;
+                        ">
+                            ${actions.map(action => `
+                                <button class="btn ${action.className || 'btn-primary'}" data-action="${action.action}" style="
+                                    padding: 8px 16px;
+                                    border: none;
+                                    border-radius: 6px;
+                                    cursor: pointer;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    ${action.className === 'btn-ghost' 
+                                        ? 'background: transparent; color: #666; border: 1px solid #e5e7eb;' 
+                                        : 'background: #007AFF; color: white;'
+                                    }
+                                ">
+                                    ${action.text}
+                                </button>
+                            `).join('')}
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+            
+            document.body.appendChild(modalOverlay);
+            
+            // Add additional styles
+            const style = document.createElement('style');
+            style.textContent = `
+                .modal-overlay .user-menu-items { padding: 8px 0; }
+                .modal-overlay .menu-item-button { 
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    padding: 12px 16px;
+                    color: #1f2937;
+                    cursor: pointer;
+                    transition: all 0.2s;
+                    border-radius: 6px;
+                }
+                .modal-overlay .menu-item-button:hover { background: #f3f4f6; }
+                .modal-overlay .menu-item-button i { 
+                    width: 20px; 
+                    text-align: center; 
+                    color: #6b7280; 
+                }
+                .modal-overlay .menu-item-button.logout-item { 
+                    color: #dc2626; 
+                    margin-top: 8px; 
+                    border-top: 1px solid #e5e7eb; 
+                    padding-top: 16px; 
+                }
+                .modal-overlay .menu-item-button.logout-item i { color: #dc2626; }
+                .modal-overlay .menu-item-button.logout-item:hover { background: #fef2f2; }
+                .modal-overlay .btn:hover { opacity: 0.9; }
+            `;
+            document.head.appendChild(style);
+            
+            // Event listeners
+            const closeBtn = modalOverlay.querySelector('.modal-close');
+            closeBtn.addEventListener('click', () => closeModal(modalOverlay));
+            
+            modalOverlay.addEventListener('click', (e) => {
+                if (e.target === modalOverlay) {
+                    closeModal(modalOverlay);
+                }
+            });
+            
+            const actionButtons = modalOverlay.querySelectorAll('[data-action]');
+            actionButtons.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const actionName = e.target.dataset.action;
+                    if (typeof window[actionName] === 'function') {
+                        window[actionName]();
+                    } else {
+                        closeModal(modalOverlay);
+                    }
+                });
+            });
+            
+            return modalOverlay;
+        }
+
+        function closeModal(modalOverlay) {
+            if (modalOverlay && modalOverlay.parentNode) {
+                modalOverlay.parentNode.removeChild(modalOverlay);
+            }
+        }
+
+        function closeCurrentModal() {
+            const modal = document.querySelector('.modal-overlay');
+            if (modal) {
+                closeModal(modal);
+            }
+        }
+    </script>
+</body>
+</html>
